@@ -1,11 +1,3 @@
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -16,36 +8,38 @@
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Pontano Sans';
   font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(https://fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v4/gTHiwyxi6S7iiHpqAoiE3Ogdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE8u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
@@ -55,7 +49,7 @@
 html{
   font-size: 16px;
   line-height: 1.4;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*____________________For common properties____________________*/
@@ -78,7 +72,7 @@ html{
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 800;
 }
 
@@ -106,6 +100,7 @@ header .logo img{
 }
 
 header .logo p{
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   color: hsla(0, 0%, 0%, 0.5);
 }
@@ -119,11 +114,10 @@ header nav li{
   margin-left: 1rem;
 }
 
-header nav li{
-  font-size: 1.2rem;
-}
-
 header nav li a{
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 1.15rem;
+  font-weight: bold;
   color: hsl(0, 0%, 0%);
   text-decoration: none;
 }
@@ -153,7 +147,7 @@ section.top .right{
 section.top .right h1, section.top .right h4, section.top .right .button{
   margin: 1.25rem 0rem;
   width: 75%;
-  line-height: 1.45;
+  line-height: 1.2;
   /*border: 1px solid red;*/
 }
 
@@ -164,4 +158,85 @@ section.top .right .button{
   color: hsl(360, 100%, 100%);
   /*text-align: center;*/
   /*border: 1px solid red;*/
+}
+
+/*__________________Styles the first section below the top___________________*/
+section.middle-first{
+  border: 1px solid red;
+}
+    /*_________Styles the left part___________*/
+section.middle-first .left{
+  padding: 2rem 1.5rem;
+  border: 1px solid green;
+}
+
+section.middle-first .left img{
+  max-width: 100%;
+  height: auto;
+}
+
+section.middle-first .left h1{
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+
+
+section.middle-first .left p{
+  margin: 1.5rem 0rem 0rem 0rem;
+  line-height: 1.5;
+  /*border: 1px solid red*/
+}
+
+section.middle-first .left p{
+  font-size: 1rem;
+}
+
+    /*__________Styles the right part____________*/
+section.middle-first .right{
+  padding: 1rem 0rem 2rem 0rem;
+  border: 1px solid blue;
+}
+
+section.middle-first .right .row{
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+section.middle-first .right .row{
+  display: flex;
+}
+
+section.middle-first .right .row .rowimg{
+  max-width: 35%;
+}
+
+section.middle-first .right .row .rowtext{
+  margin: 0rem 0rem 0rem 1rem;
+  max-width: 65%;
+  /*border: 1px solid red;*/
+}
+
+section.middle-first .right img{
+  max-width: 100%;
+  height: auto;
+  /*border: 1px solid red;*/
+}
+
+section.middle-first .right .row .rowtext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.middle-first .right .row .rowtext h4, section.middle-first .right .row .rowtext p, section.middle-first .right .row .rowtext a{
+  margin: 0rem 0rem .5rem 0rem;
+  line-height: 1.5;
+}
+
+section.middle-first .right .row .rowtext p, section.middle-first .right .row .rowtext a{
+  font-size: 1.1rem;
+}
+
+section.middle-first .right .row .rowtext a{
+  text-decoration: none;
 }
