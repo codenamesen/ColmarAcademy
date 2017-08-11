@@ -14,10 +14,10 @@
 }
 
 @font-face {
-  font-family: 'Pontano Sans';
+  font-family: 'Pavanam';
   font-style: normal;
   font-weight: 400;
-  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v4/gTHiwyxi6S7iiHpqAoiE3Ogdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  src: local('Pavanam'), local('Pavanam-Regular'), url(https://fonts.gstatic.com/s/pavanam/v1/6r4mpSMUudqN238yU-v4jA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
@@ -53,10 +53,6 @@ html{
 }
 
 /*____________________For common properties____________________*/
-.container{
-  display: flex;
-}
-
 .center{
   text-align: center;
 }
@@ -72,7 +68,7 @@ html{
 }
 
 h1{
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
@@ -83,26 +79,34 @@ h4{
 
 /*__________header containing the logo and the menus___________________*/
 header{
-  height: 2rem;
   padding: 1rem 1.5rem;
+  height: 2rem;
+  /*border: 1px solid red;*/
+}
+
+header .content{
+  display: flex;
   align-items: center;
+  /*border: 1px solid green;*/
 }
 
 header .logo{
+  display: flex;
   flex-grow: 1;
   align-items: center;
   /*border: 1px solid red;*/
 }
 
 header .logo img{
-  height: 3rem;
+  height: 2rem;
   width: auto;
 }
 
 header .logo p{
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: hsla(0, 0%, 0%, 0.5);
+  /*border: 1px solid red;*/
 }
 
 header .logo .bold{
@@ -110,14 +114,19 @@ header .logo .bold{
   color: hsl(0, 0%, 0%);
 }
 
-header nav li{
+header .content nav ul{
+  display: flex;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+header .content nav li{
   margin-left: 1rem;
 }
 
-header nav li a{
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 1.15rem;
-  font-weight: bold;
+header .content nav li a{
+  font-family: "Pavanam", sans-serif;
+  font-size: 1.2rem;
   color: hsl(0, 0%, 0%);
   text-decoration: none;
 }
@@ -130,23 +139,32 @@ section.top{
 }
     /*_________Left Column__________*/
 section.top .left{
+  width: 60%;
   padding: 2rem 1.5rem;
+  border: 1px solid green;
 }
 section.top .left img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
     /*_________Right Column__________*/
 section.top .right{
+  width: 40%;
+}
+
+section.top .right{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+section.top .right .content{
+
+  border: 1px solid red;
 }
     /*Sets all the elemts to same width in the top-right section*/
 section.top .right h1, section.top .right h4, section.top .right .button{
   margin: 1.25rem 0rem;
-  width: 75%;
   line-height: 1.2;
   /*border: 1px solid red;*/
 }
@@ -162,21 +180,23 @@ section.top .right .button{
 
 /*__________________Styles the first section below the top___________________*/
 section.middle-first{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
     /*_________Styles the left part___________*/
 section.middle-first .left{
   padding: 2rem 1.5rem;
+  width: 60%;
   border: 1px solid green;
 }
 
 section.middle-first .left img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin: 0rem 0rem 2rem 0rem;
 }
 
 section.middle-first .left h1{
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 1.5rem 0rem;
 }
 
 
@@ -193,11 +213,19 @@ section.middle-first .left p{
 
     /*__________Styles the right part____________*/
 section.middle-first .right{
-  padding: 1rem 0rem 2rem 0rem;
+  /*padding: 1rem 0rem 2rem 0rem;*/
+  width: 40%;
   border: 1px solid blue;
 }
 
+section.middle-first .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 section.middle-first .right .row{
+  height: 100%;
   padding: 1rem;
   border: 1px solid red;
 }
@@ -234,7 +262,7 @@ section.middle-first .right .row .rowtext h4, section.middle-first .right .row .
 }
 
 section.middle-first .right .row .rowtext p, section.middle-first .right .row .rowtext a{
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 section.middle-first .right .row .rowtext a{
