@@ -1,3 +1,9 @@
+/* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -55,8 +61,8 @@
 
 html{
   font-size: 16px;
-  line-height: 1.4;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 /*____________________For common properties____________________*/
@@ -76,7 +82,7 @@ html{
 
 h1{
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h4{
@@ -154,7 +160,12 @@ section.top .left{
   width: 60%;
   border: 1px solid green;
 }
-section.top .left img{
+
+section.top .left .content{
+  border: 1px solid red;
+}
+
+section.top .left .content img{
   width: 100%;
   height: auto;
 }
@@ -185,7 +196,7 @@ section.top .right .content h4{
 section.top .right .button{
   background-color: hsl(240, 4%, 35%);
   padding: .5rem 0rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: hsl(360, 100%, 100%);
   /*text-align: center;*/
   /*border: 1px solid red;*/
@@ -193,16 +204,17 @@ section.top .right .button{
 
 /*__________________Styles the first section below the top___________________*/
 section.middle-first{
+  display: flex;
   /*border: 1px solid red;*/
 }
     /*_________Styles the left part___________*/
 section.middle-first .left{
-  padding: 2rem 1.5rem;
   width: 60%;
-  border: 1px solid green;
+  padding: 2rem 1.5rem;
+  /*border: 1px solid blue;*/
 }
 
-section.middle-first .left img{
+section.middle-first .left .content img{
   width: 100%;
   height: auto;
   margin: 0rem 0rem 2rem 0rem;
@@ -211,8 +223,6 @@ section.middle-first .left img{
 section.middle-first .left h1{
   margin: 0rem 0rem 1.5rem 0rem;
 }
-
-
 
 section.middle-first .left p{
   margin: 1.5rem 0rem 0rem 0rem;
@@ -226,58 +236,44 @@ section.middle-first .left p{
 
     /*__________Styles the right part____________*/
 section.middle-first .right{
-  /*padding: 1rem 0rem 2rem 0rem;*/
-  width: 40%;
-  border: 1px solid blue;
-}
-
-section.middle-first .right{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-section.middle-first .right .row{
-  height: 100%;
-  padding: 1rem;
-  border: 1px solid red;
+  border-left: 1px solid gray;
+  padding: 1rem 0rem 2rem 0rem;
+  /*border: 1px solid blue;*/
 }
 
 section.middle-first .right .row{
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  /*border: 1px solid brown;*/
 }
 
-section.middle-first .right .row .rowimg{
-  max-width: 35%;
+section.middle-first .right .row .rowimgbox{
+  width: 35%;
+  margin: 1rem;
 }
 
-section.middle-first .right .row .rowtext{
-  margin: 0rem 0rem 0rem 1rem;
-  max-width: 65%;
-  /*border: 1px solid red;*/
-}
-
-section.middle-first .right img{
-  max-width: 100%;
+section.middle-first .right .row .rowimgbox img{
+  width: 100%;
   height: auto;
-  /*border: 1px solid red;*/
+  /*border: 2px solid red;*/
 }
 
 section.middle-first .right .row .rowtext{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 65%;
+  /*border: 1px solid red;*/
 }
 
-section.middle-first .right .row .rowtext h4, section.middle-first .right .row .rowtext p, section.middle-first .right .row .rowtext a{
-  margin: 0rem 0rem .5rem 0rem;
+section.middle-first .right .row .rowtext p{
+  margin: .5rem 0rem;
   line-height: 1.5;
-}
-
-section.middle-first .right .row .rowtext p, section.middle-first .right .row .rowtext a{
-  font-size: 0.9rem;
 }
 
 section.middle-first .right .row .rowtext a{
   text-decoration: none;
+  color: hsla(225, 86%, 58%, 1);
+}
+
+#bottom{
+  background-color: hsla(332, 0%, 61%, 0.5);
 }
