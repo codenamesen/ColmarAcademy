@@ -81,13 +81,23 @@ html{
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
+h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
 h4{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+
+img{
+  width: 100%;
+  height: auto;
 }
 
 /*__________header containing the logo and the menus___________________*/
@@ -158,17 +168,17 @@ section.top{
 section.top .left{
   padding: 2rem 1.5rem;
   width: 60%;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 section.top .left .content{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
-section.top .left .content img{
+/*section.top .left .content img{
   width: 100%;
   height: auto;
-}
+}*/
 
     /*_________Right Column__________*/
 section.top .right{
@@ -176,21 +186,28 @@ section.top .right{
   align-items: center;
 }
 
-section.top .right{
-  width: 26%;
+section.top .right .content{
+  width: 67%;
+  /*border: 1px solid red;*/
 }
 
 section.top .right .content{
-  /*border: 1px solid red;*/
+  margin: 2.5rem 0rem;
 }
 
 section.top .right .content h1{
   line-height: 1.2;
 }
 
-section.top .right .content h4{
-  margin: 2.5rem 0rem;
-  line-height: 1;
+section.top .right .content p{
+  margin: 1.5rem 0rem;
+}
+
+
+section.top .right .content p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 section.top .right .button{
@@ -203,77 +220,141 @@ section.top .right .button{
 }
 
 /*__________________Styles the first section below the top___________________*/
-section.middle-first{
+section.second{
   display: flex;
   /*border: 1px solid red;*/
 }
     /*_________Styles the left part___________*/
-section.middle-first .left{
+section.second .left{
   width: 60%;
   padding: 2rem 1.5rem;
   /*border: 1px solid blue;*/
 }
 
-section.middle-first .left .content img{
-  width: 100%;
-  height: auto;
+section.second .left .content img{
+  /*width: 100%;
+  height: auto;*/
   margin: 0rem 0rem 2rem 0rem;
 }
 
-section.middle-first .left h1{
+section.second .left h1{
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
-section.middle-first .left p{
+section.second .left p{
   margin: 1.5rem 0rem 0rem 0rem;
   line-height: 1.5;
   /*border: 1px solid red*/
 }
 
-section.middle-first .left p{
+section.second .left p{
   font-size: 1rem;
 }
 
-    /*__________Styles the right part____________*/
-section.middle-first .right{
+    /*_____________Styles the right part of the section just below the first______________*/
+section.second .right{
   border-left: 1px solid gray;
   padding: 1rem 0rem 2rem 0rem;
   /*border: 1px solid blue;*/
 }
 
-section.middle-first .right .row{
+section.second .right .row{
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
   /*border: 1px solid brown;*/
 }
 
-section.middle-first .right .row .rowimgbox{
+section.second .right .row .rowimgbox{
   width: 35%;
   margin: 1rem;
 }
 
-section.middle-first .right .row .rowimgbox img{
+section.second .right .row .rowimgbox img{
   width: 100%;
   height: auto;
   /*border: 2px solid red;*/
 }
 
-section.middle-first .right .row .rowtext{
+section.second .right .row .rowtext{
   width: 65%;
   /*border: 1px solid red;*/
 }
 
-section.middle-first .right .row .rowtext p{
+section.second .right .row .rowtext p{
   margin: .5rem 0rem;
   line-height: 1.5;
 }
 
-section.middle-first .right .row .rowtext a{
+section.second .right .row .rowtext a{
   text-decoration: none;
   color: hsla(225, 86%, 58%, 1);
 }
 
 #bottom{
   background-color: hsla(332, 0%, 61%, 0.5);
+}
+
+/*This styles the third section of the page*/
+section.third{
+  padding: 2rem 4.5rem;
+  background-color: hsla(0, 0%, 92%, 1);
+  /*border: 1px solid red;*/
+}
+
+/*This styles the main heading in the third section/the courses section*/
+section.third h2{
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+/*This styles the container .tiles that contain all the courses with images*/
+section.third .tiles{
+  background-color: hsla(0, 0%, 92%, 1);
+}
+
+/*This styles the container containing both the rows for tiles(course img & details)*/
+section.third .tiles{
+  display: flex;
+  flex-direction: column;
+}
+
+section.third .tiles .tile-row{
+  display: flex;
+}
+
+/*This puts bottom margin for the first row of courses*/
+#first{
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+/*This styles each of the course and its image*/
+section.third .tiles .tile-row .tile{
+  width: 33%;
+  /*border: 1px solid green;*/
+}
+
+/*This puts left and right marging to the middle course in both the row*/
+#middle{
+  margin: 0rem 2rem;
+}
+
+section.third .tiles .tile-row .tile{
+  background-color: hsl(0, 0%, 100%);
+}
+
+section.third .tiles .tile-row .tile .tileimgbox{
+  /*border: 1px solid red;*/
+}
+
+section.third .tiles .tile-row .tile .tiletextbox{
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+/*For setting the marging between the paragraphs and heading, below image of curses*/
+section.third .tiles .tile-row .tile .tiletextbox h4, section.third .tiles .tile-row .tile .tiletextbox p{
+  margin: 1rem 0rem;
+}
+
+section.third .tiles .tile-row .tile .tiletextbox p{
+  line-height: 1.5;
 }
