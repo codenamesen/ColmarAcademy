@@ -417,9 +417,43 @@ section.bottom .bottomcontent .right .row .imgbox{
 
 section.bottom .bottomcontent .right .row .rowtext{
   width: 65%;
+  /*border: 1px solid red;*/
+}
+
+section.bottom .bottomcontent .right .row .rowtext h4{
+  line-height: 2.5;
+  /*border: 1px solid red;*/
+}
+
+section.bottom .bottomcontent .right .row .rowtext p{
+  line-height: 1.5;
 }
 
 #toprow{
   background-color: hsl(0, 0%, 89%);
   /*border: 1px solid red;*/
+}
+
+/*This styles the footer*/
+footer{
+  display: flex;
+}
+
+footer{
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid gray;
+}
+
+footer .copy{
+  flex-grow: 1;
+}
+
+footer nav ul li{
+  display: inline-block;
+}
+
+footer nav ul li a{
+  text-decoration: none;
+  margin: 0rem 0rem 0rem .5rem;
 }
