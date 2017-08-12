@@ -184,6 +184,11 @@ section.top .left .content{
 section.top .right{
   display: flex;
   align-items: center;
+  /*border: 1px solid red;*/
+}
+
+section.top .right{
+  /*width: 40%;*/
 }
 
 section.top .right .content{
@@ -357,4 +362,64 @@ section.third .tiles .tile-row .tile .tiletextbox h4, section.third .tiles .tile
 
 section.third .tiles .tile-row .tile .tiletextbox p{
   line-height: 1.5;
+}
+
+/*This styles the bottom or the last section just above the footer*/
+section.bottom{
+  padding: 2rem 0rem 2rem 1.5rem;
+}
+
+section.bottom h2{
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+section.bottom .bottomcontent{
+  display: flex;
+}
+
+section.bottom .bottomcontent .left{
+  width: 60%;
+  padding: 0rem 1.5rem 0rem 0rem;
+  /*border: 1px solid red;*/
+}
+
+section.bottom .bottomcontent .left .videobox{
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+section.bottom .bottomcontent .left .videobox video{
+  width: 100%;
+  height: auto;
+}
+
+section.bottom .bottomcontent .left h4{
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+section.bottom .bottomcontent .left p{
+  line-height: 1.5;
+}
+
+section.bottom .bottomcontent .right{
+  width: 40%;
+}
+
+section.bottom .bottomcontent .row{
+  display: flex;
+  align-items: center;
+}
+
+section.bottom .bottomcontent .right .row .imgbox{
+  width: 35%;
+  margin: 1rem;
+  /*border: 1px solid red;*/
+}
+
+section.bottom .bottomcontent .right .row .rowtext{
+  width: 65%;
+}
+
+#toprow{
+  background-color: hsl(0, 0%, 89%);
+  /*border: 1px solid red;*/
 }
