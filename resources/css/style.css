@@ -113,7 +113,7 @@ header .content{
   /*border: 1px solid green;*/
 }
 
-header .logo{
+header .content .logo{
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -154,6 +154,39 @@ header .content nav li a{
   text-decoration: none;
 }
 
+/*_______________For screen haveing width more thatn 631px________________*/
+@media only screen and (min-width:631px){
+  header .content nav .mobile li{
+    display: none;
+  }
+}
+
+/*________________For screen having width less than 631px_________________*/
+@media only screen and (max-width: 630px){
+  header .content nav .desktop li{
+    display: none;
+  }
+
+  header .content nav .mobile li{
+    margin-left: 3rem;
+  }
+}
+
+/*________________For screen having width less than 461px__________________*/
+@media only screen and (max-width: 460px){
+  header .content .logo p{
+    display: none;
+  }
+
+  header .content, header .content nav ul{
+    justify-content: space-around;
+  }
+
+  header .content nav{
+    width: 100%;
+  }
+}
+
 /*_____________________Styles for the first Section__________________________*/
 section.top{
   display: flex;
@@ -174,11 +207,6 @@ section.top .left{
 section.top .left .content{
   /*border: 1px solid red;*/
 }
-
-/*section.top .left .content img{
-  width: 100%;
-  height: auto;
-}*/
 
     /*_________Right Column__________*/
 section.top .right{
@@ -376,7 +404,7 @@ section.bottom h2{
 section.bottom .bottomcontent{
   display: flex;
 }
-
+/*_____________________________For styling the left coloumn of the bottom most section______________________________*/
 section.bottom .bottomcontent .left{
   width: 60%;
   padding: 0rem 1.5rem 0rem 0rem;
@@ -409,6 +437,12 @@ section.bottom .bottomcontent .row{
   align-items: center;
 }
 
+/*_________________________________This is puts background color to the first row_________________________________*/
+#toprow{
+  background-color: hsl(0, 0%, 89%);
+  /*border: 1px solid red;*/
+}
+
 section.bottom .bottomcontent .right .row .imgbox{
   width: 35%;
   margin: 1rem;
@@ -429,10 +463,6 @@ section.bottom .bottomcontent .right .row .rowtext p{
   line-height: 1.5;
 }
 
-#toprow{
-  background-color: hsl(0, 0%, 89%);
-  /*border: 1px solid red;*/
-}
 
 /*This styles the footer*/
 footer{
