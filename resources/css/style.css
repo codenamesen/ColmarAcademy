@@ -157,6 +157,10 @@ header .content nav li a{
   header .content nav .mobile li{
     display: none;
   }
+
+  section.second .right .row .rowimgbox .mobileimg{
+    display: none;
+  }
 }
 
 /*________________For screen having width less than 631px_________________*/
@@ -167,6 +171,10 @@ header .content nav li a{
 
   header .content nav .mobile li{
     margin-left: 3rem;
+  }
+
+  section.second .right .row .rowimgbox .desktopimg{
+    display: none;
   }
 }
 
@@ -259,16 +267,16 @@ section.top .right .button{
     position: relative;
   }
 
-  section.top .right{
-    width: 0px;
-    padding: 0rem 0rem 6rem 0rem;
-    align-items: flex-end;
-  }
-
   section.top .left{
     min-width: 100%;
     box-sizing: border-box;
     /*border: 1px solid purple;*/
+  }
+
+  section.top .right{
+    width: 0px;
+    padding: 0rem 0rem 6rem 0rem;
+    align-items: flex-end;
   }
 
   Section.top .right .content{
@@ -307,6 +315,7 @@ section.top .right .button{
   section.top .right{
     min-width: 100%;
     padding: 2rem 1rem 2rem 1rem;
+    box-sizing: border-box;
     justify-content: center;
     /*border: 1px solid red;*/
   }
@@ -403,8 +412,95 @@ section.second .right .row .rowtext a{
   color: hsla(225, 86%, 58%, 1);
 }
 
-#bottom{
+#secondsectionbottomrow{
   background-color: hsla(332, 0%, 61%, 0.5);
+}
+
+/*For screen size between 753px and 1034px the changes in the second sction are*/
+@media only screen and (min-width:753px) and (max-width:1034px){
+  section.second{
+    position: relative;
+    border: 1px solid green;
+  }
+
+  section.second .left{
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  section.second .right{
+    border-left: none;
+    position: absolute;
+    padding: 0rem;
+    top: 2rem;
+    left: 1.5rem;
+    /*border: 1px solid red;*/
+  }
+
+  section.second .right .row{
+    border: none;
+    padding: 1rem 0rem 0rem 1rem;
+  }
+
+
+  section.second .right .row .rowimgbox{
+    margin: 0rem 0.5rem 0rem 0rem;
+  }
+
+  section.second .right .row .rowtext p, section.second .right .row .rowtext a{
+    display: none;
+  }
+
+  section.second .right .row h4{
+    padding-left: 1rem;
+    color: white;
+    background-color: rgb(93, 184, 209);
+    line-height: 1.5;
+  }
+
+  #secondsectionbottomrow{
+    background-color: hsla(0, 0%, 100%, 0);
+  }
+}
+
+@media only screen and (max-width:753px){
+  section.second .left{
+    display: none;
+  }
+
+  section.second .right{
+    box-sizing: border-box;
+    border: none;
+    min-width: 100%;
+    padding: 1rem;
+    /*border: 1px solid red;*/
+  }
+
+  section.second .right .row{
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    /*border: 1px solid red;*/
+  }
+
+  section.second .right .row .rowimgbox{
+    min-width: 100%;
+    height: auto;
+    margin: 0px;
+    /*border: 1px solid red;*/
+  }
+
+  section.second .right .row .rowtext{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    /*border: 1px solid red;*/
+  }
+
+  #secondsectionbottomrow{
+    background-color: hsl(0, 0%, 100%);
+  }
+
 }
 
 /*This styles the third section of the page*/
@@ -517,7 +613,7 @@ section.bottom .bottomcontent .row{
 }
 
 /*_________________________________This is puts background color to the first row_________________________________*/
-#toprow{
+#bottomsectiontoprow{
   background-color: hsl(0, 0%, 89%);
   /*border: 1px solid red;*/
 }
