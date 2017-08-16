@@ -463,7 +463,7 @@ section.second .right .row .rowtext a{
   }
 }
 
-@media only screen and (max-width:753px){
+@media only screen and (max-width:752px){
   section.second .left{
     display: none;
   }
@@ -521,50 +521,87 @@ section.third .tiles{
 }
 
 /*This styles the container containing both the rows for tiles(course img & details)*/
-section.third .tiles{
-  display: flex;
-  flex-direction: column;
-}
 
-section.third .tiles .tile-row{
+section.third .tiles .tile-group{
   display: flex;
-}
-
-/*This puts bottom margin for the first row of courses*/
-#first{
   margin: 0rem 0rem 2rem 0rem;
 }
 
 /*This styles each of the course and its image*/
-section.third .tiles .tile-row .tile{
+section.third .tiles .tile-group .tile{
+  background-color: hsl(0, 0%, 100%);
+}
+
+section.third .tiles .tile-group .tile{
+  box-sizing: border-box;
   width: 33%;
   /*border: 1px solid green;*/
 }
 
-/*This puts left and right marging to the middle course in both the row*/
-#middle{
-  margin: 0rem 2rem;
-}
-
-section.third .tiles .tile-row .tile{
-  background-color: hsl(0, 0%, 100%);
-}
-
-section.third .tiles .tile-row .tile .tileimgbox{
+section.third .tiles .tile-group .tile .tileimgbox{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
   /*border: 1px solid red;*/
 }
 
-section.third .tiles .tile-row .tile .tiletextbox{
+section.third .tiles .tile-group .tile .tiletextbox{
+  box-sizing: border-box;
   padding: 0.5rem 1rem 1rem 1rem;
+  /*border: 1px solid red;*/
 }
 
 /*For setting the marging between the paragraphs and heading, below image of curses*/
-section.third .tiles .tile-row .tile .tiletextbox h4, section.third .tiles .tile-row .tile .tiletextbox p{
+section.third .tiles .tile-group .tile .tiletextbox h4, section.third .tiles .tile-group .tile .tiletextbox p{
+  box-sizing: border-box;
   margin: 1rem 0rem;
+  /*border: 1px solid red;*/
 }
 
-section.third .tiles .tile-row .tile .tiletextbox p{
+section.third .tiles .tile-group .tile .tiletextbox p{
   line-height: 1.5;
+}
+
+/*This puts left and right marging to the middle course in both the row*/
+section.third .tiles .tile-group .coursemiddle{
+  margin: 0rem 2rem;
+  /*border: 1px solid red;*/
+}
+
+@media only screen and (min-width:753px) and (max-width:1034px){
+  section.third .tiles{
+    display: flex;
+    /*border: 1px solid blue;*/
+  }
+
+  section.third .tiles .tile-group{
+    box-sizing: border-box;
+    display: block;
+    margin: 0rem;
+    padding: 0rem;
+    width: 50%;
+    /*border: 1px solid red;*/
+  }
+
+  section.third .tiles .tile-group .tile{
+  box-sizing: border-box;
+  margin: 0rem;
+  width: 100%;
+  /*border: 1px solid red;*/
+  }
+
+  section.third .tiles .tile-group{
+    margin: 0rem 1rem 1rem 0rem;
+  }
+
+  section.third .tiles .tile-group .coursemiddle{
+    margin: 2rem 0rem;
+  }
+
+  section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
+    display: none;
+  }
+
 }
 
 /*This styles the bottom or the last section just above the footer*/
@@ -610,6 +647,31 @@ section.bottom .bottomcontent .right{
 section.bottom .bottomcontent .row{
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 752px){
+  section.third .tiles .tile-group{
+    display: block;
+  }
+
+  section.third .tiles .tile-group{
+    margin: 0rem;
+    /*border: 1px solid red;*/
+  }
+
+  section.third .tiles .tile-group .tile{
+    margin: 0.25rem 0rem;
+    width: 100%;
+    /*border: 1px solid green;*/
+  }
+
+  section.third .tiles .tile-group .tile{
+    background-color: rgb(170, 170, 170);
+  }
+
+  section.third .tiles .tile-group .tile .tileimgbox, section.third .tiles .tile-group .tile .tiletextbox p, section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
+    display: none;
+  }
 }
 
 /*_________________________________This is puts background color to the first row_________________________________*/
