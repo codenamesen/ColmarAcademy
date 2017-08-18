@@ -883,8 +883,12 @@ footer .copy{
   flex-grow: 1;
 }
 
-footer nav ul li{
+footer nav ul, footer nav ul li{
   display: inline-block;
+}
+
+footer nav ul{
+  margin-left: 2rem;
 }
 
 footer nav ul li a{
@@ -894,12 +898,12 @@ footer nav ul li a{
 }
 
 /*_____________This Styles the responsive code for the footer__________________*/
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:670px) {
   footer{
     height: auto;
   }
 
-  footer nav{
+  footer nav ul.mobile{
     display: none;
   }
 }
