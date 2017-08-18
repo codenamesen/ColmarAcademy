@@ -802,6 +802,8 @@ section.bottom .bottomcontent .right .row .rowtext p{
 /*This styles the footer*/
 footer{
   display: flex;
+  background-color: hsl(222, 40%, 43%);
+  color: white;
 }
 
 footer{
@@ -821,4 +823,15 @@ footer nav ul li{
 footer nav ul li a{
   text-decoration: none;
   margin: 0rem 0rem 0rem .5rem;
+  color: white;
+}
+
+@media only screen and (max-width:550px) {
+  footer{
+    height: auto;
+  }
+
+  footer nav{
+    display: none;
+  }
 }
