@@ -100,7 +100,7 @@ header{
   width: 100%;
   height: 4rem;
   position: fixed;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(222, 100%, 87%);
   z-index: 2;
   box-sizing: border-box;
 }
@@ -262,7 +262,7 @@ section.top .right .button{
   /*border: 1px solid red;*/
 }
 
-@media only screen and (min-width:753px) and (max-width:1034px){
+@media only screen and (min-width:747px) and (max-width:1034px){
   section.top{
     position: relative;
   }
@@ -275,14 +275,16 @@ section.top .right .button{
 
   section.top .right{
     width: 0px;
-    padding: 0rem 0rem 6rem 0rem;
+    padding: 0rem 0rem 4rem 0rem;
     align-items: flex-end;
+    /*border: 1px solid red;*/
   }
 
   Section.top .right .content{
     position: absolute;
     left: 4rem;
     width: 40%;
+    /*border: 1px solid red;*/
     /*background-color: hsla(217, 47%, 36%, 0.59);*/
   }
 
@@ -300,7 +302,7 @@ section.top .right .button{
   }
 }
 
-@media only screen and (max-width:752px){
+@media only screen and (max-width:746px){
   section.top{
     display: block;
     /*flex-direction: column;*/
@@ -417,7 +419,7 @@ section.second .right .row .rowtext a{
 }
 
 /*For screen size between 753px and 1034px the changes in the second sction are*/
-@media only screen and (min-width:753px) and (max-width:1034px){
+@media only screen and (min-width:747px) and (max-width:1034px){
   section.second{
     position: relative;
     border: 1px solid green;
@@ -445,6 +447,7 @@ section.second .right .row .rowtext a{
 
   section.second .right .row .rowimgbox{
     margin: 0rem 0.5rem 0rem 0rem;
+    border: 2px solid #5db8d1;
   }
 
   section.second .right .row .rowtext p, section.second .right .row .rowtext a{
@@ -452,9 +455,11 @@ section.second .right .row .rowtext a{
   }
 
   section.second .right .row h4{
-    padding-left: 1rem;
+    display: inline;
+    padding: .5rem;
+    font-size: 1rem;
     color: white;
-    background-color: rgb(93, 184, 209);
+    background-color: hsl(192, 55%, 59%);
     line-height: 1.5;
   }
 
@@ -463,7 +468,7 @@ section.second .right .row .rowtext a{
   }
 }
 
-@media only screen and (max-width:752px){
+@media only screen and (max-width:746px){
   section.second .left{
     display: none;
   }
@@ -500,14 +505,13 @@ section.second .right .row .rowtext a{
   #secondsectionbottomrow{
     background-color: hsl(0, 0%, 100%);
   }
-
 }
 
 /*This styles the third section of the page*/
 section.third{
   padding: 2rem 4.5rem;
   background-color: hsla(0, 0%, 92%, 1);
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 /*This styles the main heading in the third section/the courses section*/
@@ -568,7 +572,7 @@ section.third .tiles .tile-group .coursemiddle{
   /*border: 1px solid red;*/
 }
 
-@media only screen and (min-width:753px) and (max-width:1034px){
+@media only screen and (min-width:747px) and (max-width:1034px){
   section.third .tiles{
     display: flex;
     /*border: 1px solid blue;*/
@@ -591,7 +595,7 @@ section.third .tiles .tile-group .coursemiddle{
   }
 
   section.third .tiles .tile-group{
-    margin: 0rem 1rem 1rem 0rem;
+    margin: 0rem 1rem 0rem 1rem;
   }
 
   section.third .tiles .tile-group .coursemiddle{
@@ -601,10 +605,34 @@ section.third .tiles .tile-group .coursemiddle{
   section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
     display: none;
   }
-
 }
 
-/*This styles the bottom or the last section just above the footer*/
+@media only screen and (max-width: 746px){
+  section.third .tiles .tile-group{
+    display: block;
+  }
+
+  section.third .tiles .tile-group{
+    margin: 0rem;
+    /*border: 1px solid red;*/
+  }
+
+  section.third .tiles .tile-group .tile{
+    margin: 0.25rem 0rem;
+    width: 100%;
+    /*border: 1px solid green;*/
+  }
+
+  section.third .tiles .tile-group .tile{
+    background-color: hsl(0, 0%, 66%);
+  }
+
+  section.third .tiles .tile-group .tile .tileimgbox, section.third .tiles .tile-group .tile .tiletextbox p, section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
+    display: none;
+  }
+}
+
+/*_______________________This styles the bottom or the last section just above the footer____________________________*/
 section.bottom{
   padding: 2rem 0rem 2rem 1.5rem;
 }
@@ -649,31 +677,6 @@ section.bottom .bottomcontent .row{
   align-items: center;
 }
 
-@media only screen and (max-width: 752px){
-  section.third .tiles .tile-group{
-    display: block;
-  }
-
-  section.third .tiles .tile-group{
-    margin: 0rem;
-    /*border: 1px solid red;*/
-  }
-
-  section.third .tiles .tile-group .tile{
-    margin: 0.25rem 0rem;
-    width: 100%;
-    /*border: 1px solid green;*/
-  }
-
-  section.third .tiles .tile-group .tile{
-    background-color: rgb(170, 170, 170);
-  }
-
-  section.third .tiles .tile-group .tile .tileimgbox, section.third .tiles .tile-group .tile .tiletextbox p, section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
-    display: none;
-  }
-}
-
 /*_________________________________This is puts background color to the first row_________________________________*/
 #bottomsectiontoprow{
   background-color: hsl(0, 0%, 89%);
@@ -700,6 +703,101 @@ section.bottom .bottomcontent .right .row .rowtext p{
   line-height: 1.5;
 }
 
+@media only screen and (min-width:747px) and (max-width:1034px){
+  section.bottom{
+    padding: 2rem 0rem 1.5rem 0rem;
+  }
+
+  section.bottom .bottomcontent .left h4{
+    margin: 1.5rem 0rem .5rem 1.5rem;
+  }
+
+  section.bottom .bottomcontent .left p{
+    margin: 0rem 0.5rem 2rem 1.5rem;
+  }
+
+  section.bottom .bottomcontent{
+    position: relative;
+    border: 1px solid green;
+  }
+
+  section.bottom .bottomcontent .left{
+    box-sizing: border-box;
+    min-width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  section.bottom .bottomcontent .left .videobox{
+    margin: 0rem;
+  }
+
+  #bottomsectiontoprow{
+    background-color: hsla(0, 0%, 100%, 0);
+    /*border: 1px solid red;*/
+  }
+
+  section.bottom .bottomcontent .right{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: .5rem .5rem 0rem .5rem;
+    min-width: 100%;
+    height: 35%;
+    /*border: 2px solid brown;*/
+  }
+
+  section.bottom .bottomcontent .right .row{
+    display: block;
+    width: 15%;
+    /*border: 1px solid red;*/
+  }
+
+  section.bottom .bottomcontent .right .row .imgbox{
+    width: 100%;
+    margin: 0rem 0rem 0.2rem 0rem;
+    border: 2px solid #5db8d1;
+  }
+
+  section.bottom .bottomcontent .right .row .rowtext{
+    width: 100%;
+    border: 2px solid #5db8d1;
+  }
+
+  section.bottom .bottomcontent .right .row .rowtext h4{
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1;
+    background-color:hsl(192, 55%, 59%);
+    color: black;
+  }
+
+  section.bottom .bottomcontent .right .row .rowtext p{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 746px){
+  section.bottom .bottomcontent .left h4, section.bottom .bottomcontent .left p{
+    display: none;
+  }
+
+  section.bottom .bottomcontent .right{
+    display: none;
+  }
+
+  section.bottom{
+    padding: 2rem 0rem 0rem 0rem;
+  }
+
+  section.bottom .bottomcontent .left{
+    min-width: 100%;
+    padding: 0rem;
+  }
+}
 
 /*This styles the footer*/
 footer{
