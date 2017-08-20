@@ -78,19 +78,19 @@ html{
 h1{
   font-size: 2.6rem;
   font-weight: 700;
-  color: black;
+  color: hsl(0, 1%, 14%);
 }
 
 h2{
   font-size: 2.2rem;
   font-weight: bold;
-  color: black;
+  color: hsl(0, 1%, 14%);
 }
 
 h4{
   font-size: 1.2rem;
   font-weight: 600;
-  color: black;
+  color: hsl(0, 1%, 14%);
 }
 
 img{
@@ -150,6 +150,7 @@ header .content nav li{
   margin-left: 1rem;
 }
 
+/*This styles and animates the links in the header*/
 header .content nav li a{
   font-family: "Pavanam", sans-serif;
   font-size: 1.2rem;
@@ -173,10 +174,14 @@ header .content nav ul.desktop li a:hover{
 header .content nav ul.desktop li a{
   transition: all 200ms ease-in-out;
 }
+/*_______________For screen haveing width more that 747px________________*/
+@media only screen and (min-width:747px){
+  section.third .tiles .tile-group .tile .tiletextbox i{
+    display: none;
+  }
+}
 
-
-
-/*_______________For screen haveing width more thatn 631px________________*/
+/*_______________For screen haveing width more that 753px________________*/
 @media only screen and (min-width:753px){
   header .content nav .mobile li{
     display: none;
@@ -293,7 +298,7 @@ section.top .right .content p{
   font-weight: 600;
 }
 
-/*__________Styles the button and creates a shadow______________*/
+/*__________Styles the button and creates a shadow and a clickable effect______________*/
 section.top .right .button{
   padding: .5rem 0rem;
   font-size: 1.3rem;
@@ -362,6 +367,11 @@ section.top .right .button{
 
   section.top .right .content p{
     display: none;
+  }
+
+  /*This changes the shadow color of the button when in tab mode.*/
+  section.top .right .button{
+    box-shadow: 5px 5px 20px hsl(0, 0%, 70%);
   }
 }
 
@@ -629,7 +639,7 @@ section.third .tiles .tile-group .tile .tiletextbox{
   /*border: 1px solid red;*/
 }
 
-/*___________For setting the marging between the paragraphs and heading, below image of curses__________*/
+/*___________For setting the marging between the paragraphs and heading, below image of courses__________*/
 section.third .tiles .tile-group .tile .tiletextbox h4, section.third .tiles .tile-group .tile .tiletextbox p{
   box-sizing: border-box;
   margin: 1rem 0rem;
@@ -646,6 +656,7 @@ section.third .tiles .tile-group .coursemiddle{
   /*border: 1px solid red;*/
 }
 
+
 section.third .tiles .tile-group .tile:hover{
   opacity: 1;
   box-shadow: 10px 10px 20px hsl(0, 0%, 21%);
@@ -654,6 +665,7 @@ section.third .tiles .tile-group .tile:hover{
 section.third .tiles .tile-group .tile{
   transition: all 500ms ease-in-out;
 }
+
 
 /*_______________This styles the third secion when the screen width is between 747px and 1034px______________*/
 @media only screen and (min-width:747px) and (max-width:1034px){
@@ -714,6 +726,28 @@ section.third .tiles .tile-group .tile{
 
   section.third .tiles .tile-group .tile .tileimgbox, section.third .tiles .tile-group .tile .tiletextbox p, section.third .tiles .tile-group .tile .tiletextbox .coursedetails{
     display: none;
+  }
+}
+
+  /*For keepin the fa-graduation-cap icon in the same row and the icon only gets displayed at screen size less than 747px */
+@media only screen and (max-width: 746px){
+  section.third .tiles .tile-group .tile .tiletextbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.third .tiles .tile-group .tile i{
+    color: white;
+    opacity: 0.2;
+  }
+
+  section.third .tiles .tile-group .tile i:hover{
+    opacity: 1;
+  }
+
+  section.third .tiles .tile-group .tile i{
+    transition: all 500ms ease-out;
   }
 }
 
