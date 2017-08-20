@@ -300,7 +300,7 @@ section.top .right .button{
   color: hsl(360, 100%, 100%);
   border: 2px solid white;
   box-shadow: 5px 5px 20px hsl(0, 0%, 21%);
-  background-color: rgb(0, 133, 157);
+  background-color: hsl(221, 40%, 36%);
   border-radius: 5px;
 }
 
